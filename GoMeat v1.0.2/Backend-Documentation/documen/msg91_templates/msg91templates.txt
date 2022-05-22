@@ -1,0 +1,61 @@
+sir you have to register other templates as well .like for order confirmation, order placing , order out for delivery etc. please register below templates and share the DLT_TE_ID of all templates here then I will put it in sms file and share you the file. and please share your registered sender id also-
+
+template 1- 
+
+Order Successfully Placed: Your order id #{#$var1#}  contains of  {#var2#} of price {#var3#} {#var4#} is placed Successfully.You can expect your item(s) will be delivered on {#var5#} between {#var6#}.
+
+template 2-
+
+You got an order cart id #{#$var1#} contains of {#var2#} of price {#var3#} {#var4#}. It will have to delivered on {#var5#} between {#var6#}. 
+
+template 3 -
+
+Your Order is confirmed: Your order id #{#$var1#} is confirmed by the store.You can expect your item(s) will be delivered on {#var2#} ({#var3#}).
+
+template 4 -
+
+Out For Delivery: Your order id #{#$var1#} contains of {#$var2#} of price {#$var3#} {#$var4#} is Out For Delivery.Get ready with {#$var5#} {#$var6#} cash.
+
+template 5-
+
+Out For Delivery: Order id #{#$var1#} contains of {#$var2#} of price {#$var3#} {#$var4#} is Out For Delivery. {#$var5#} will deliver the Order.
+
+template 6-
+
+Delivery Completed: Your order id #{#$var1#} contains of {#$var2#} of price {#$var3#} {#$var4#} is Delivered Successfully.
+
+template 7-
+
+Delivery Completed: Order id #{#$var1#} from {#$var2#} contains of {#$var3#} of price {#$var4#} {#$var5#} is Delivered Successfully.
+
+template 8-
+
+Your OTP is: {#var#}.\nNote: Please DO NOT SHARE this OTP with anyone.
+
+template 9-
+
+Amount of {#var#} marked paid successfully against your request.
+
+template 10 -
+
+Hello {#var1#}, We are cancelling your order ({#var2#}) due to following reason: {#var3#}
+
+template 11-
+
+Hey {#var1#} :your wallet recharge of {#var2#} {#var3#} is successful.
+
+template 12-
+
+Hello {#var1#}, We are cancelling your order no. = {#var2#} due to following reason: {#var3#}
+
+template 13- 
+
+Welcome Dear, {#var1#} to  {#var2#} Family. We are happy to have you here.
+
+template 14-
+
+Order Cancelled: Your order id #{#var1#} Successfully Cancelled. It Contains {#var2#} of Price {#var3#} {#var4#}.
+
+template 15-
+
+Order cart id #{#var1#} Cancelled By the User. It Contains {#var2#} of Price {#var3#} {#var4#}.

@@ -1,0 +1,289 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>GoMeat</title>
+
+	<meta name="description" content="Installation Document for GoMeat">
+	<meta name="author" content="Tecmanic">
+	<meta name="copyright" content="Tecmanic">
+	<meta name="generator" content="Documenter v2.0 https://evp.to/documenter">
+	<meta name="date" content="2021-03-13T00:00:00+01:00">
+
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+</head>
+<body class="documenter-project-gomeat">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#upload_and_extract_the_zip_on_your_server" title="Upload and Extract the zip on your server">Upload and Extract the zip on your server</a></li>
+			<li><a href="#create_a_database_on_server" title="Create a Database On Server">Create a Database On Server</a></li>
+			<li><a href="#start_installation_process" title="Start Installation Process">Start Installation Process</a></li>
+			<li><a href="#setting_up_the_admin_panel" title="Setting Up The Admin panel">Setting Up The Admin panel</a></li>
+			<li><a href="#all_set_up" title="All Set Up">All Set Up</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Tecmanic 2021<br>
+		made with the <a href="https://evp.to/documenter">Documenter v2.0</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Gomeat</h1>
+	<h2>Multi Meat-Stores </h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 12/24/2021</li>
+	<li>latest update: 12/24/2021</li>
+	<li>by: Tecmanic</li>
+	<li><a href="https://tecmanic.com/">tecmanic.com/</a></li>
+	<li>email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#116;&#101;&#99;&#109;&#97;&#110;&#105;&#99;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#116;&#101;&#99;&#109;&#97;&#110;&#105;&#99;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+
+	<section id="upload_and_extract_the_zip_on_your_server">
+	<div class="page-header"><h3>Upload and Extract the zip on your server</h3><hr class="notop"></div>
+<div class="alert alert-success">
+	1-First of all, upload the zip file (<strong>gomeatbackend.zip </strong>which you get from the package) to your server (<strong>public_html </strong>or you can create a <strong>sub-domain </strong>for it and upload it there) .</div>
+<div class="alert alert-success">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --Suppose I upload it inside <strong>public_html/gomeat/</strong> in my panel and extract it. Then I will get below files/folders-</div>
+<div class="alert alert-success">
+	&nbsp;</div>
+<p>
+	<img alt="" src="assets/images/image_7.png" style="width: 700px; height: 311px;"></p>
+</section>
+<section id="create_a_database_on_server">
+	<div class="page-header"><h3>Create a Database On Server</h3><hr class="notop"></div>
+<div class="alert alert-success">
+	1- Create a Database on your server and save the details anywhere(you will need the DB details in Installation Process.</div>
+<p>	<img alt="" src="assets/images/image_1.png" style="width: 700px; height: 279px;"><br>
+	&nbsp;</p>
+</section>
+<section id="start_installation_process">
+	<div class="page-header"><h3>Start Installation Process</h3><hr class="notop"></div>
+<div class="alert alert-success">
+	If you want to see the installation videos then you can check it in below link-<br>
+	<strong>Gomeat/Gogrocer Installation </strong>-&nbsp;https://youtu.be/ruIHVvOd7J0<br>
+	<strong>How to add language -&nbsp;</strong><span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);">https://youtu.be/Cf3rcp6KDJM</span><br>
+	<strong>How to change language keywords -&nbsp;</strong><span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);">https://youtu.be/SlTIpEFbwEE</span><br>
+	<strong>How to set default language -&nbsp;</strong><span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);">https://youtu.be/3VVQqch9z48</span></div>
+<div class="alert alert-success">
+	1- Hit the url <strong>your_domain_name/folder_name </strong>on browser then you will get the installation page-<br>
+	&nbsp; &nbsp; &nbsp;<br>
+	&nbsp; &nbsp; &nbsp; ----for me it is <strong>mydomain/gomeat </strong>when I hit it on browser I get the below page then <strong>click on the next button</strong>-<br>
+	<br>
+	<strong><img alt="" src="assets/images/image_11.png" style="width: 700px; height: 362px;"><br>
+	<br>
+	when you click on the next button then you will get the below page insert your license code and licensee name(which you got from codecanyon or from us) on that then click verify.<br>
+	<img alt="" src="assets/images/image_6.png" style="width: 700px; height: 355px;"></strong></div>
+<div class="alert alert-success">
+	<strong>when you click on verify button after inserting the right details<em>(license code and licensee name)</em> then you will get the below page,&nbsp;insert database details(<em>which you have created on second step</em>) on the page use <em>localhost </em>as <em>Database&nbsp; Host</em> if the database is on same server. use another hostname<em>(where your database exists)</em> as your <em>Database Host</em> then click on import-</strong></div>
+<p>
+	<strong><img alt="" src="assets/images/image_2.png" style="width: 700px; height: 516px;"></strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<div class="alert alert-success">
+	<strong>After clicking import button you will get the below page if the details are right. if you get the below page it means the database has been successfully imported. Then click on next button-<br>
+	<br>
+	<img alt="" src="assets/images/image_3.png" style="width: 700px; height: 364px;"></strong></div>
+<div class="alert alert-success">
+	<br>
+	<strong>After clicking on next button you will get the below page then click on <em>Click Here to go </em>then you can see the login page of admin panel it means your backend has been installed-<br>
+	<br>
+	<br>
+	<img alt="" src="assets/images/image_4.png" style="width: 700px; height: 365px;"></strong></div>
+<div class="alert alert-success">
+	<strong>The login page will look like below-<br>
+	<br>
+	<img alt="" src="assets/images/image_10.png" style="width: 700px; height: 541px;"></strong><br>
+	<br>
+	<strong>you can login with below credentials-</strong><br>
+	<br>
+	<strong>email =</strong> admin@demo.com<br>
+	<strong>password=</strong> tecmanic<br>
+	&nbsp;</div>
+</section>
+<section id="setting_up_the_admin_panel">
+	<div class="page-header"><h3>Setting Up The Admin panel</h3><hr class="notop"></div>
+<div class="alert alert-success">
+	After login you will see the admin dashboard.click on the settings option in admin panel sidebar then you will reach to the Settings page. on settings page you have to changes credentials in some section with your credentials<em><strong>(SMS/OTP Settings, FCM Keys, Payment Mode,Map Settings)</strong></em> or have to make changes according to your need in some sections<em><strong>(App Notice, Driver Incentive(per Order), Global Settings)</strong></em>.the settings page will look like below-<br>
+	<img alt="" src="assets/images/image_9.png" style="width: 700px; height: 332px;"></div>
+<div class="alert alert-success">
+	=====================================================================</div>
+<div class="alert alert-success">
+	<div>
+		<strong>For Map Setting Follow the below procedure(you can use google map or mapbox)-</strong><br>
+		<br>
+		<u><em><strong>For creating Google Map-</strong></em></u></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-a34f5600-7fff-c462-2073-07c4595037df"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">create a google map api key from Google console account and place it in admin panel </span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Settings-&gt;Map Settings-&gt;Google Map</span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> </span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">.&nbsp;</span></span></div>
+	<p class="alert alert-success" dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 11pt;">
+		<span id="docs-internal-guid-a34f5600-7fff-c462-2073-07c4595037df"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">When your Google Maps Api key works successfully, the problem with Add delivery boy, Add store and Add area section will be solved. You have to create google map api key by your own via below link- </span><a href="https://console.cloud.google.com/google/maps-apis/overview" style="text-decoration-line: none;"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(46, 154, 233); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">https://console.cloud.google.com/google/maps-apis/overview</span></a></span></p>
+	<p class="alert alert-success" dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 11pt;">
+		<span id="docs-internal-guid-a34f5600-7fff-c462-2073-07c4595037df"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Note-</span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> </span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Add card in Billing section is mandatory when you create google map api key. Check your google map api key with this link.</span></span></p>
+	<p class="alert alert-success" dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 11pt;">
+		<span id="docs-internal-guid-a34f5600-7fff-c462-2073-07c4595037df"><a href="https://maps.googleapis.com/maps/api/geocode/json?latlng=-27.0000,133.0000&amp;key=Place" style="text-decoration-line: none;"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(46, 154, 233); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">https://maps.googleapis.com/maps/api/geocode/json?latlng=-27.0000,133.0000&amp;key=</span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Place</span></a><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; background-color: transparent; font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> your google map api key here</span></span></p>
+	<p class="alert alert-success" dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 11pt;">
+		<span id="docs-internal-guid-a34f5600-7fff-c462-2073-07c4595037df"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">see the attached screenshot i you will get response like that it means your map api key is working.otherwise your map api key is not working.<br>
+		<img alt="" src="assets/images/image_5.png" style="width: 600px; height: 389px;"></span></span></p>
+	<div dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 11pt;">
+		&nbsp;</div>
+	<div dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 11pt;">
+		&nbsp;</div>
+	<div dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 11pt;">
+		<em><strong><u><span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">for creating mapbox api-</span></span></u></strong></em></div>
+	<div>
+		<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); vertical-align: baseline; white-space: pre-wrap;"><span id="docs-internal-guid-e3a14230-7fff-93ff-da61-e97ad4103380"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;">you can use </span><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;">mapbox</span><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;"> as an alternative to </span><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;">Google map</span><br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;">create an account via</span><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;"> </span><a href="https://account.mapbox.com/" style="text-decoration-line: none;"><span style="font-size: 14pt; font-family: Calibri, sans-serif; color: rgb(17, 85, 204); font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline;">https://account.mapbox.com/</span></a><br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;">after successful account creation and login you will get below page-<br>
+		<br>
+		<img alt="" src="assets/images/image_8.png"  ></span></span></span></div>
+	<div>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">you mapbox token has been generated and you can find it under </span><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Access Tokens -&gt; Default public token</span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		=====================================================================</div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">FCM Server Key Creation-</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">create a server key from firebase and put it on </span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Admin panel </span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Settings-&gt;FCM Server Key</span></span></div>
+	<div dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 11pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">User App FCM Server Key</span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> = for customer app,</span></span></div>
+	<div dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 11pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Store App FCM Server Key</span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> = For store app</span></span></div>
+	<div dir="ltr" style="line-height: 1.92; background-color: rgb(255, 255, 255); margin-top: 0pt; margin-bottom: 11pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Driver App FCM Server Key</span><span style="font-size: 11.5pt; font-family: Roboto, sans-serif; color: rgb(85, 85, 85); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> = For Driver app</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		=====================================================================<br>
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Choose a Message gateway</span><br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">choose a message gateway via</span><span style="font-size: 14pt; font-family: Calibri, sans-serif; color: rgb(74, 134, 232); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> S</span><span style="font-size: 14pt; font-family: Calibri, sans-serif; color: rgb(74, 134, 232); font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">ettings-&gt;SMS/OTP settings. </span><br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">you can choose between two message gateways msg91 or twilio .</span><br>
+		<br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">NOTE-</span><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> if you choose msg91 then you have to buy transaction sms package of msg91.</span><br>
+		<br>
+		<br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">If you don&rsquo;t want to use any message gateways for the project then you simply choose </span><span style="font-size: 10.5pt; font-family: Roboto, sans-serif; color: rgb(74, 134, 232); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">OTP/Message Off</span><span style="font-size: 10.5pt; font-family: Roboto, sans-serif; color: rgb(73, 80, 87); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> </span><span style="font-size: 10.5pt; font-family: Roboto, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">from dropdown in </span><span style="font-size: 14pt; font-family: Calibri, sans-serif; color: rgb(74, 134, 232); font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">settings-&gt;sms/OTP settings.</span><br>
+		<br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; color: rgb(255, 153, 0); font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">if you choose firebase otp on&hellip;&hellip;. than otp will be sent via firebase.</span><br>
+		=====================================================================<br>
+		<br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Setup SMTP details</span><br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">sir you have to setup your SMTP from source/.env&nbsp;</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">MAIL_DRIVER=smtp</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">MAIL_HOST=smtp.gmail.com</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">MAIL_PORT=465</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">MAIL_USERNAME=smtp mail</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">MAIL_PASSWORD= smtp password</span></span></div>
+	<div dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt;">
+		<span id="docs-internal-guid-4e8cb81d-7fff-ef28-831e-42205355f0e9"><span style="font-size: 14pt; font-family: Calibri, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">MAIL_ENCRYPTION=ssl</span><br>
+		<br>
+		<br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">You can create gmail smtp credentials by following the steps from below link-</span><br>
+		<br>
+		<span style="font-size: 14pt; font-family: Calibri, sans-serif; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">https://medium.com/graymatrix/using-gmail-smtp-server-to-send-email-in-laravel-91c0800f9662</span></span></div>
+	<div>
+		&nbsp;</div>
+	<div>
+		&nbsp;</div>
+</div>
+<p>	&nbsp;</p>
+</section>
+<section id="all_set_up">
+	<div class="page-header"><h3>All Set Up</h3><hr class="notop"></div>
+<div class="alert alert-success">
+	If you follow the all steps successfully then your backend is ready for live now-<br>
+	<br>
+	your admin panel credentials are as follows-<br>
+	<br>
+	<strong>admin panel url-&nbsp; </strong>domain_name/folder_name/admin<br>
+	<strong>example-</strong>(https://xyz.com/gomeat/admin)<br>
+	email = admin@demo.com<br>
+	password- tecmanic<br>
+	<br>
+	<strong>(you can change the admin panel credentials by clicking on the email on top right corner of admin panel after login)<br>
+	<br>
+	<br>
+	Your apps base url and Img Url will be follows-<br>
+	<br>
+	User App-&nbsp;&nbsp;</strong>domain_name/folder_name/api/<br>
+	<br>
+	<strong>Store App-&nbsp;</strong><strong>&nbsp;</strong>domain_name/folder_name/api/store/<br>
+	<br>
+	<strong>Driver App-&nbsp;</strong>domain_name/folder_name/api/driver/<br>
+	<br>
+	<strong>IMG URL for all Apps-&nbsp;&nbsp;</strong>domain_name/folder_name/<br>
+	<br>
+	<br>
+	=======================================================================<br>
+	&nbsp;</div>
+</section>
+
+	</div>
+</body>
+</html>
